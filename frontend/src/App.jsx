@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-<<<<<<< HEAD
 import {
   Container,
   Navbar,
@@ -191,59 +190,6 @@ function App() {
         © {new Date().getFullYear()} Reader AI
       </footer>
     </>
-=======
-import { callGemini } from "./apiUpload";
-import "./App.css"; //  import the CSS file
-
-function App() {
-  const [prompt, setPrompt] = useState("");
-  const [response, setResponse] = useState("");
-  const [loading, setLoading] = useState(false);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!prompt.trim()) return;
-
-    setLoading(true);
-    setResponse("");
-
-    try {
-      const text = await callGemini(prompt);
-      setResponse(text);
-    } catch (err) {
-      setResponse("❌ Error: " + err.message);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  return (
-    <div className="app-container">
-      <h1>Gemini Prompt Console</h1>
-
-      {/* Input form */}
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={prompt}
-          onChange={(e) => setPrompt(e.target.value)}
-          placeholder="Enter a prompt..."
-        />
-        <button type="submit">Send</button>
-      </form>
-
-      {/* Loading indicator */}
-      {loading && <p>Loading...</p>}
-
-      {/* Gemini response */}
-      {response && (
-        <div className="response-box">
-          <h3>Response:</h3>
-          <p>{response}</p>
-        </div>
-      )}
-    </div>
->>>>>>> 8d9ce574518f56df36e0acd904ab947daf492645
   );
 }
 

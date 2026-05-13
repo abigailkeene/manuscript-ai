@@ -10,10 +10,7 @@
 
 # production
 /build
-<<<<<<< HEAD
 /dist
-=======
->>>>>>> 8d9ce574518f56df36e0acd904ab947daf492645
 
 # misc
 .DS_Store
