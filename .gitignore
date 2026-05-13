@@ -1,0 +1,26 @@
+# Root level
+node_modules/
+.env
+.env.local
+*.log
+.DS_Store
+
+# Frontend (React)
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.env.local
+
+# Backend (Node/Express)
+backend/node_modules/
+backend/dist/
+backend/.env
+backend/.env.local
+
+# IDE/editor specific
+.vscode/
+.idea/
+*.swp
+
+# OS specific
+Thumbs.db
