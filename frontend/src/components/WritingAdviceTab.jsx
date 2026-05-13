@@ -68,7 +68,7 @@ Response style: ${
     const finalPrompt = `
 ${promptToSend}
 
-=========================
+
 📘 FULL MANUSCRIPT CONTEXT:
 ${manuscript.text}
     `.trim();

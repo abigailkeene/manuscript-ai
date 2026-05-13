@@ -70,7 +70,6 @@ Response style: ${
     const finalPrompt = `
 ${personalizedPrompt}
 
-=========================
 📘 FULL MANUSCRIPT CONTEXT:
 ${manuscript.text}
     `.trim();

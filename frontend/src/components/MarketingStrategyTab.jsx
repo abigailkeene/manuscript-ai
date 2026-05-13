@@ -69,7 +69,6 @@ function MarketingStrategyTab({ onResponsesUpdate, personality }) {
     const finalPrompt = `
 ${promptToSend}
 
-=========================
 📘 FULL MANUSCRIPT CONTEXT:
 ${manuscript.text}
 `.trim();
