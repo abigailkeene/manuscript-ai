@@ -1,3 +1,4 @@
+import API_URL from "../config";
 import React, { useState } from "react";
 import { Card, Form, Button, Spinner, Alert } from "react-bootstrap";
 
@@ -19,7 +20,7 @@ function Summarizer({ bookText, setBookText, onSubmit }) {
     formData.append("file", file);
 
     try {
-      const res = await fetch("https://aipublishing.onrender.com/api/upload", { method: "POST", body: formData });
+      const res = await fetch(`${API_URL}/api/gemini`, { method: "POST", body: formData });
       const data = await res.json();
 
       if (res.ok) {

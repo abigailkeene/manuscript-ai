@@ -1,3 +1,4 @@
+import API_URL from "../config";
 import React, { useState, useEffect } from "react";
 import { Card, Form, Button, Spinner, Alert } from "react-bootstrap";
 
@@ -46,7 +47,7 @@ function UploadTab({ onUploadComplete, personality, setPersonality }) {
       setUploading(true);
       setMessage("");
 
-      const res = await fetch("https://aipublishing.onrender.com/api/upload", {
+      const res = await fetch(`${API_URL}/api/gemini`, {
         method: "POST",
         body: formData,
       });

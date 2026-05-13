@@ -1,3 +1,4 @@
+import API_URL from "../config";
 import React, { useState } from "react";
 import {
   Container,
@@ -74,7 +75,7 @@ ${manuscript.text}
 `.trim();
 
     try {
-      const res = await fetch("https://aipublishing.onrender.com/api/gemini", {
+      const res = await fetch(`${API_URL}/api/gemini`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt: finalPrompt }), // ⭐ UPDATED
