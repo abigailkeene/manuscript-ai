@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
@@ -17,18 +16,5 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
-=======
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.2",
-    "express": "^5.1.0",
-    "node-fetch": "^3.3.2"
->>>>>>> 8d9ce574518f56df36e0acd904ab947daf492645
   }
 }
